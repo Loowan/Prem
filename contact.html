@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me contacter</title>
+    <link rel="stylesheet" href="reset.css">   
+    <link href="contact.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+    
+        <div class="banner">
+    
+            <a href="index.html" title="Accueil">
+                <h1 id="title-big">Mon premier site</h1>
+            </a>
+            <p class="author">
+                Lou-Anne Bertho
+            </p>
+                
+        </div>
+    
+        <nav class="Navigation">
+                <div class="post-header">
+                    <a class="nav-accueil" href="index.html" title="Accueil">
+                        <h2>Accueil</h2>
+                    </a>
+                    <a class="subs" href="index.html#presentation" title="Présentation">
+                        <h2 >Présentation</h2>
+                    </a>
+                    <a class="nav-creations" href="creations.html" title="Créations">
+                        <h2 >Créations</h2>
+                    </a>
+                    <a class="subs" href="index.html#projet" title="Projet">
+                        <h2 >Projet</h2>
+                    </a>
+                    <a class="nav-contact" href="contact.html" title="Contact">
+                        <h2 >Me contacter</h2>
+                    </a>
+                </div>
+            </nav>
+    
+    
+    </header>
+
+<div class="main">
+    <h3 class="contact-title">Vous souhaitez me contacter ?</h3>
+            <form action="contact.html">
+                    <legend>>Envoyez-moi un message !</legend>
+                <div class="inputs-wrapper">
+                    <div id="email-wrapper">
+                        <label for="emailinput">Votre e-mail</label>
+                            <input type="email" name="email" id="emailinput" title="E-mail" placeholder="contact@exemple.fr" required></input>
+                    </div>
+                    <div id="msg-input">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" title="Votre message" inputmode="text" placeholder="Ecrivez ici votre message" cols="50" rows="10" spellcheck="false" required></textarea>
+                    </div>
+                    <div id="join-file">
+                        <label for="fileinput">Joindre un fichier (optionnel)</label>
+                        <input type="file" name="file" id="fileinput" title="Joindre un fichier"></input>
+                    </div>
+                    <div id="check">
+                        <input type="checkbox" name="accordmail" id="accord" title="Cocher pour accepter" checked>J'accepte d'être contacté en retour par mail.</label>
+                    </div> 
+                    <div>
+                        <input type="submit" value="Envoyer le message" name="send" id="submit">
+                    </div>
+                </div> 
+            </form>
+
+
+
+<footer class="footer">
+
+    <div class="sommaire">
+        <h4 class="title-sommaire">Le site</h4>
+            <div class="text-sommaire">
+                    <ul class="list-sommaire">
+                        <li><a class="links" href="index.html" title="Accueil">Accueil</a></li>
+                        <li><a class="links" href="index.html#presentation" title="Présentation">Présentation</a></li>
+                        <li><a class="links" href="creations.html" title="Créations">Créations</a></li>
+                    </ul>
+                    <ul class="sd-list-sommaire">
+                        <li><a class="links" href="projet.html" title="Projet">Projet</a></li>
+                        <li><a class="links" href="contact.html" title="Contact">Me contacter</a></li>
+                    </ul>
+            </div>
+    </div>
+
+    <div class="reseaux">
+        <h4 class="title-reseaux">Retrouvez-moi :</h4>
+                <ul class="list-reseaux">
+                    <li><a class="links-social" href="https://www.instagram.com/loowaan_/" target="_blank" title="Instagram">
+                            <img src="img/Instagram_icon.png.webp" alt="Logo Instagram"class="logo" width="70">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="links-social" href="https://www.tiktok.com/@loowaan" target="_blank" title="Tiktok">
+                            <img src="img/vecteezy_tiktok-png-icon_16716485.png" alt="Logo Tiktok"class="logo" width="70">
+                            Tiktok
+                        </a>
+                    </li>
+                </ul>
+    </div>
+
+</footer>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+

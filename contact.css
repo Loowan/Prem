@@ -1,0 +1,776 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    max-width: 100vw;
+}
+
+.banner{
+    background-image: url(img/denisfond.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;        
+    background-position: center;
+    background-repeat: no-repeat;  
+    position: relative;
+}
+
+
+
+.author{
+    color: rgb(255, 212, 23);
+    font-family: monospace;
+    font-style: italic;
+    font-size: 18px;
+    position:absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+
+#title-big{
+    z-index: 100;
+    position:absolute;
+    font-size: 600%;
+    font-weight: 100;
+    font-family: "Mea Culpa";
+    left: 45%;
+    top: 35%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(253, 187, 45, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+}
+
+.post-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 217, 180);
+    height: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #facb66;
+    background: linear-gradient(0deg, rgb(209, 135, 75) 0%, rgba(242, 194, 97, 1) 66%, rgba(255, 255, 255, 1) 100%);
+}
+
+.headerbg{
+    background-size: cover;
+    background-position: center;
+}
+
+.subs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-accueil, .nav-creations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
+    border-right: black solid 1px;
+}
+
+.nav-contact, .nav-creations{
+    border-left: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.subs:hover {
+    font-size: 26px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
+}
+
+body{
+    background-image: url(img/fond-main.jpg);
+    object-fit: cover;
+}
+
+body .main *{
+    color: rgb(0, 0, 0);
+}
+
+.main{
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 214, 126, 0.747);
+}
+
+.text-intro{
+    background-color: rgb(233, 229, 205, 0.781);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 550;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+body .reference{
+    color: rgb(0, 4, 255);
+    text-decoration: underline;
+}
+
+h4{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.footer{
+    background: rgb(78, 47, 29);
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.footer > .sommaire{
+    border: black solid 1px;
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer > .sommaire > .title-sommaire{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.footer .text-sommaire {
+    background-color: rgba(233, 229, 205, 0.781);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 5%;
+    padding-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    width: 70%;
+}
+
+.footer .list-sommaire{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .sd-list-sommaire{
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: solid black 1px;
+
+}
+
+.footer > .reseaux{
+    border: black solid 1px ;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.footer .title-reseaux{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.footer .list-reseaux{
+    display: flex;
+    padding: 20px;
+    gap: 60px;
+    padding-left: 40px;
+}
+
+.reseaux .links-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.links:hover{
+    color: rgb(172, 69, 0);
+    text-decoration: underline;
+}
+
+.reference:hover{
+    color: darkslateblue;
+    text-decoration: underline;
+}
+
+/* _______________________________________________________________________________ */
+
+h3{
+    padding-top: 40px;
+    border-bottom: solid 1px rgb(128, 128, 128);
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form{
+    flex-direction: column;
+    background: rgb(233, 229, 205, 0.781);
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 80px;
+}
+
+legend{
+    font-size: 18px;
+    border-bottom: black solid 1px;
+    align-self: flex-start;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    width: 60%;
+}
+
+.inputs-wrapper{
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.space-bottom{
+    background: rgb(233, 229, 205, 0.781);
+    color: caca;
+}
+
+#email-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#msg-input{
+    display: flex;
+    gap: 10px;
+}
+
+#msg-input textarea{
+    resize: none;
+}
+
+#join-file{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+#check{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#submit{
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* ____________________________________________________________________________________________________ */
+
+@media screen and (max-width: 1500px){
+    #message{
+        width: 60%;
+    }
+
+    form{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .banner{
+        height: 200px;
+    }
+
+    #title-big{
+        font-size: 70px;
+        top: 60px;
+        left: 300px;
+    }
+
+    .post-header{
+        border-radius: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .main{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .footer .sommaire{
+        width: 800px;
+        padding: 5px
+    }
+
+    .footer > .sommaire > .title-sommaire{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer .text-sommaire{
+        padding: 5px;
+        font-size: 19px;
+        width: 300px;
+        height: 120px;
+        margin-bottom: 10px
+    }
+
+    .footer .list-sommaire{
+        gap: 20px;
+    }
+
+    .footer .sd-list-sommaire{
+        padding-left: 20px;
+        width: 300px;
+        left: 15px;
+        gap: 20px;
+    }
+
+    .footer .reseaux{
+        width: 800px;
+        padding: 5px
+    }
+
+    .footer > .reseaux > .title-reseaux{
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    }
+
+    .footer .list-reseaux{
+        gap: 70px;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .banner{
+        height: 200px;
+    }
+
+    #title-big{
+        font-size: 60px;
+        top: 50px;
+        left: 100px;
+    }
+
+    .post-header{
+        border-radius: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .introduction{
+    border-radius: 0;
+    }
+
+    .footer .sommaire{
+        width: 800px;
+        padding: 5px
+    }
+
+    .footer > .sommaire > .title-sommaire{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer .text-sommaire{
+        padding: 5px;
+        font-size: 15px;
+        width: 250px;
+        height: 120px;
+        margin-bottom: 10px
+    }
+
+    .footer .list-sommaire{
+        gap: 20px;
+    }
+
+    .footer .sd-list-sommaire{
+        padding-left: 20px;
+        width: 300px;
+        left: 15px;
+        gap: 20px;
+    }
+
+    .footer .reseaux{
+        width: 250px;
+        padding: 5px
+    }
+
+    .footer > .reseaux > .title-reseaux{
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    }
+
+    .footer .list-reseaux{
+        gap: 20px;
+        padding-left: 30px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 615px){
+    form{
+    width: 500px;
+    padding-left: 10px 
+    }
+
+    .contact-title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .body{
+        width: 100vw;
+    }
+    .banner{
+        height: 130px;
+    }
+
+    #title-big{
+        font-size: 50px;
+        top: 10px;
+        left: 100px;
+    }
+
+    .author{
+        font-size: 10px;
+        left: 5px;
+    }
+
+    .post-header{
+        border-radius: 0;
+        width: 100%;
+        height: 40px;
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+
+    .contact-title{
+        font-size: 20px
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    form{
+        width: 97%;
+        overflow: hidden;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+
+    .footer .sommaire{
+        width: 248px;
+        padding: 5px;
+        border: none;
+    }
+
+    .footer > .sommaire > .title-sommaire{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer .text-sommaire{
+        padding: 5px;
+        font-size: 16px;
+        width: 220px;
+        height: 120px;
+        margin-bottom: 10px;
+        left: 0;
+    }
+
+    .footer .list-sommaire{
+        gap: 20px;
+    }
+
+    .footer .sd-list-sommaire{
+        padding-left: 5px;
+        width: 300px;
+        gap: 20px;
+    }
+
+    .footer .reseaux{
+        width: 150px;
+        padding: 5px;
+        border-right: none;
+    }
+
+    .footer > .reseaux > .title-reseaux{
+    padding-bottom: 18px;
+    font-size: 18px;
+    padding-left: 5px;
+    }
+
+    .footer .list-reseaux{
+        gap: 20px;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    .links-social{
+        font-size: 15px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    legend{
+        font-size: 15px;
+    }
+
+    .body{
+        width: 100vw;
+    }
+    .banner{
+        height: 130px;
+    }
+
+    #title-big{
+        font-size: 50px;
+        top: 10px;
+        left: 100px;
+    }
+
+    .author{
+        font-size: 10px;
+        left: 5px;
+    }
+
+
+    .post-header{
+        border-radius: 0;
+        width: 100%;
+        height: 40px;
+    }
+
+    .subs{
+        display: none;
+    }
+
+    .nav-accueil{
+        border-right: black solid 2px;
+    }
+
+    .nav-creations{
+        border-right: black solid 2px;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+
+    .footer .sommaire{
+        width: 50%;
+        padding: 5px
+    }
+
+    .footer > .sommaire > .title-sommaire{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer .text-sommaire{
+        padding: 5px;
+        font-size: 16px;
+        width: 150px;
+        height: 130px;
+        margin-bottom: 10px;
+        left: 0;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 10px;
+    }
+
+    .footer .list-sommaire{
+        gap: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .footer .sd-list-sommaire{
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 10px;
+        width: 300px;
+        display: flex;
+        border: none;
+        left: 0;
+        top: 10px;
+        gap: 10px;
+    }
+
+    .footer .reseaux{
+        width: 180px;
+        padding: 5px;
+        overflow-x: hidden;
+    }
+
+    .footer > .reseaux > .title-reseaux{
+    padding-bottom: 18px;
+    font-size: 16px;
+    padding-left: 5px;
+    }
+
+    .footer .list-reseaux{
+        gap: 20px;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    .links-social{
+        font-size: 15px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner{
+        height: 100px;
+    }
+
+    #title-big{
+        font-size: 30px;
+        top: 10px;
+        left: 100px;
+        width: 160px;
+    }
+
+    .author{
+        font-size: 10px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    .main{
+        width: 100vw;
+    }
+
+    #title-big{
+        left: 80px;
+    }
+
+    .footer .text-sommaire{
+        width: 120px;
+        font-size: 15px;
+    }
+
+    .footer .sd-list-sommaire{
+        width: 100px;
+    }
+
+    .footer .sommaire .title-sommaire{
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+}
